@@ -29,7 +29,7 @@ def generate_image(query):
     return b64_string
 
 @app.route('/, methods=['get'])
-def upload_image():
+def home():
     return "server is working fine"
 
 
