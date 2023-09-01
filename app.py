@@ -28,12 +28,11 @@ def generate_image(query):
 
     return b64_string
 
-@app.route('/, methods=['get'])
-def home():
+@app.route('/')
+def hello_world():
     return "server is working fine"
 
-
-@app.route('/generate_image, methods=['get'])
+@app.route('/generate_image', methods=['get'])
 def upload_image():
     query = request.args.get('query')
 
