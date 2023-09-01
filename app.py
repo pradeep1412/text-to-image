@@ -29,7 +29,7 @@ def generate_image(query):
     return b64_string
 
 
-@app.route('/upload_image_endpoint', methods=['get'])
+@app.route('/generate_image, methods=['get'])
 def upload_image():
     query = request.args.get('query')
 
